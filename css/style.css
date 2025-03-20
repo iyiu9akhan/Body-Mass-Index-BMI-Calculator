@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background-color: #122033;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 950px;
+}
+#container .view_portion {
+  width: 375px;
+  height: 800px;
+  background-color: #015fa4;
+  border-radius: 25px;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#container .top h1 {
+  color: #d5f4e6;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px;
+}
+
+#container .top p {
+  color: #d5f4e6;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0px 28px;
+}
+#container .middle img {
+  height: 500px;
+}
+#container .middle {
+  display: flex;
+  justify-content: space-between;
+}
+#container .middle .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#container .middle input {
+  height: 35px;
+  width: 130px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 15px;
+}
+#container .middle .input_box {
+  display: flex;
+}
+#container .middle input:focus {
+  outline: none;
+}
+#container .middle input::placeholder {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 13px;
+}
+#container .middle .right h6 {
+  color: #d5f4e6;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#container .result_portion img{
+  height: 185px;
+  margin: 0 auto;
+}
+#container .bottom , #container .result_bottom{
+  text-align: center;
+}
+#container .bottom button , #container .result_bottom button {
+  border: none;
+  height: 50px;
+  width: 300px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  color: #015fa4;
+  background-color: #b5e7a0;
+  cursor: pointer;
+}
+#container .middle .error_sign {
+  color: #ee4444;
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+#container .middle .error_sign1,
+#container .middle .error_sign2,
+#container .middle .error_sign3,
+#container .middle .error_sign4,
+#container .middle .error_sign5 {
+  color: #ee4444;
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+#container .error_text {
+  color: #ee4444;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#container .result_portion {
+  position: relative;
+}
+#container .result_portion .top h1 {
+  color: #d5f4e6;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 27px;
+}
+#container .result_portion .result{
+    /* width: 335px; */
+    height: 270px;
+    background-color: #d5f4e6;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 25px;
+}
+#container .result_portion .user_info{
+    height: 150px;
+    margin-top: 20px;
+    background-color: #d5f4e6;
+    border-radius: 15px;
+    padding: 25px;
+    display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+
+}#container .result_portion .result_advice{
+  padding: 12px 25px;
+    height: 120px;
+    margin-top: 20px;
+    margin-top: 20px;
+    background-color: #d5f4e6;
+    border-radius: 15px;
+
+}
+#container #bmi_result_text{
+  color: green;
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+}
+
+#container .result_portion .user_info::after{
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 2px;
+  border-radius: 2px;
+  background-color: #015fa4;
+  opacity: .3;
+  /* top:100%; */
+  /* left: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container .result_portion .user_info_text{
+  text-transform: capitalize;
+  font-weight: 600;
+  /* color: #009990; */
+  color: #071952;
+}
+#container .result_portion .result_advice_info{
+  font-weight: 600;
+  color: #071952;
+  text-align: justify;
+  font-size: 14px;
+}
+#container .result_portion h1{
+  text-transform: capitalize;
+  text-align: center;
+  color: #ee4444;
+  font-size: 30px;
+}

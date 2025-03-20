@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="view_portion">
+        <div class="top">
+          <h1>body mass index</h1>
+          <p>
+            BMI (Body Mass Index) calculator is a tool that measures a person's
+            body fat based on their weight and height. It helps determine
+            whether someone is underweight, normal weight, overweight, or obese.
+          </p>
+        </div>
+        <div class="middle">
+          <div class="left">
+            <img src="img/boy-img.png" alt="boy-img" />
+          </div>
+          <div class="right">
+            <div class="name">
+              <h6>name</h6>
+              <div class="input_box">
+                <input type="text" placeholder="your name" id="name" />
+                <h5 class="error_sign"></h5>
+              </div>
+            </div>
+            <div class="gender">
+              <h6>gender</h6>
+              <div class="input_box">
+                <input type="text" placeholder="your gender" id="gender" />
+                <h5 class="error_sign"></h5>
+              </div>
+            </div>
+            <div class="age">
+              <h6>age</h6>
+              <div class="input_box">
+                <input type="number" placeholder="your age" id="age" />
+                <h5 class="error_sign"></h5>
+              </div>
+            </div>
+            <div class="height">
+              <h6>height ( cm )</h6>
+              <div class="input_box">
+                <input type="number" placeholder="your height" id="height" />
+                <h5 class="error_sign"></h5>
+              </div>
+            </div>
+            <div class="weight">
+              <h6>weight ( kg )</h6>
+              <div class="input_box">
+                <input type="number" placeholder="your weight" id="weight" />
+                <h5 class="error_sign"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="error_text"></p>
+
+        <div class="result_portion">
+          <div class="top">
+            <h1>BMI calculation result</h1>
+          </div>
+          <div class="user_info">
+            <div class="user_info_text"></div>
+            <div class="user_info_text"></div>
+            <div class="user_info_text"></div>
+            <div class="user_info_text"></div>
+            <div class="user_info_text"></div>
+            <div class="user_info_text"></div>
+          </div>
+          <div class="result">
+            <img src="img/under_weight.png" alt="under_weight" class="under_weight">
+            <img src="img/normal.png" alt="normal" class="normal">
+            <img src="img/over_weight.png" alt="over_weight" class="over_weight">
+            <img src="img/ovesity.png" alt="ovesity" class="ovesity">
+            <img src="img/bad_luck.png" alt="bad_luck" class="bad_luck">
+            <h1 id="bmi_result_text"></h1>
+          </div>
+          <div class="result_advice">
+            <h1>advice &#129312</h1>
+            <div class="result_advice_info"></div>
+          </div>
+        </div>
+
+
+
+        <div class="bottom">
+          <button class="calculate_btn" onclick="calculate()">calculate</button>
+        </div>
+        <div class="result_bottom">
+          <button class="calculate_btn" onclick="pageLoad()"> return home</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
